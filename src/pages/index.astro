@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import portrait from '../assets/james.jpg';
 ---
 
 <!doctype html>
@@ -13,19 +15,49 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>James Jenkins</h1>
-			<p>
-				I build and lead businesses where technology, creativity and commercial growth
-				meet. Group CEO of Forsman &amp; Bodenfors. Twenty years and four cities &mdash; London,
-				San Francisco, New York, now Stockholm.
-			</p>
-			<p>
-				I move early, stay curious, and build advantage through innovation. I care about
-				the people I work with, and I think strong communication and a real work ethic are
-				what turn strategy into momentum. We get one go at this &mdash; so we might as well build
-				something great and enjoy it.
-			</p>
+			<section class="intro">
+				<Image src={portrait} alt="James Jenkins" class="portrait" widths={[240, 480]} sizes="240px" />
+				<div class="intro-text">
+					<h1>James Jenkins</h1>
+					<p>
+						I build and lead businesses where technology, creativity and commercial
+						growth meet. Group CEO of Forsman &amp; Bodenfors. Twenty years and four
+						cities &mdash; London, San Francisco, New York, now Stockholm.
+					</p>
+					<p>
+						I move early, stay curious, and build advantage through innovation. I care
+						about the people I work with, and I think strong communication and a real
+						work ethic are what turn strategy into momentum. We get one go at this &mdash; so
+						we might as well build something great and enjoy it.
+					</p>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.intro {
+		display: flex;
+		gap: 2.5em;
+		align-items: center;
+	}
+	.portrait {
+		width: 240px;
+		height: auto;
+		border-radius: 12px;
+		flex-shrink: 0;
+		filter: grayscale(100%);
+	}
+	.intro-text h1 {
+		margin-bottom: 0.4em;
+	}
+	@media (max-width: 720px) {
+		.intro {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1.5em;
+		}
+	}
+</style>
