@@ -1,0 +1,86 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Advisory — James Jenkins" description="James Jenkins advises a small number of brands on commercial leadership, growth, and board governance." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Advisory</h1>
+			<p class="intro-line">Most brands I work with are at a moment that matters: a new market, a new direction, a step up in ambition. These are the areas where my experience tends to be most useful.</p>
+			<section class="skill">
+				<h2>Technology and the agentic era</h2>
+				<p>I have spent my career where brands meet new technology, from the early days of digital to the arrival of AI. I am building in the agentic space myself, not watching from the sideline. I help brands and leadership teams move from curiosity about AI to using it in practice, and I help boards understand what it means for how they govern and grow. The point is not the technology for its own sake. It is what it lets a brand do better.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Commercial leadership across markets</h2>
+				<p>I have run businesses across North America and Europe, in four cities, with full P&amp;L responsibility. I build organisations that exist for the people they serve, where great strategic and creative work and a business built to last are the same goal, not competing ones. I know how the same brand has to work across very different markets without losing what makes it itself. If you are expanding into new markets, or making one global brand hold across them, this is ground I have spent twenty years on.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Building brands and driving growth</h2>
+				<p>I have spent my career building brands across both B2B and B2C. That includes eight years partnering with Nike, and the kind of decision-making that drives growth: part instinct, from years in the room with the best brands and the people who run them, and part method, from taking teams and organisations from idea to execution. Most recently the team at Forsman &amp; Bodenfors returned the agency to profit and to the top of its industry. I help brands find the position that grows them, and then see it through.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Leadership across cultures</h2>
+				<p>I have worked across Sweden, the UK, Ireland, and the US, and led teams drawn from many more. What I have learned is how much nuance matters: how to read where someone is coming from, and connect with people whose background and perspective are not my own. I try to lead in a human way, present for the big moments and the small ones, because that is what earns a team's trust and brings them with you.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Board leadership</h2>
+				<p>I trained as a board director through Styrelseakademien, the Swedish academy for board governance, completing its Effective Company Directorship program in board leadership and governance. Alongside running businesses with full P&amp;L, I have served as a chairman. I help boards and leadership teams set direction, govern well, and hold ambition and delivery in the same view. If you want a senior pair of hands in the boardroom, that is where I can help.</p>
+			</section>
+
+			<p class="closing">I am available for consultancy through Encoded Brands, or individually, on a defined scope or a specific business leadership need.</p>
+
+			<a href="/contact" class="cta">Get in touch</a>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		margin-bottom: 0.3em;
+	}
+	.intro-line {
+		font-size: 1.1em;
+		margin-bottom: 2.5em;
+		color: rgb(var(--gray-dark));
+	}
+	.skill {
+		margin-bottom: 2.5em;
+	}
+	.skill h2 {
+		font-size: 1.2em;
+		margin-bottom: 0.4em;
+	}
+	.closing {
+		margin-top: 2.5em;
+		font-style: italic;
+		color: rgb(var(--gray));
+	}
+	.cta {
+		display: inline-block;
+		margin-top: 1.5em;
+		padding: 0.6em 1.4em;
+		background: var(--accent);
+		color: rgb(var(--bg));
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+	.cta:hover {
+		background: var(--accent-dark);
+		color: rgb(var(--bg));
+	}
+</style>

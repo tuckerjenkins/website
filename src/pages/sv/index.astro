@@ -1,0 +1,72 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { Image } from 'astro:assets';
+import portrait from '../../assets/james-about.jpg';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title="James Jenkins" description="Medgrundare av Encoded Brands, hjälper varumärken att navigera den agentiska eran." />
+	</head>
+	<body>
+		<Header lang="sv" />
+		<main>
+			<div class="hero-image">
+				<Image src={portrait} alt="James Jenkins" widths={[960, 1920]} sizes="960px" />
+			</div>
+			<div class="prose">
+				<h1>Hej</h1>
+				<p>
+					Jag heter James Jenkins. Jag har tillbringat 20+ år med att bygga och leda verksamheter där teknologi, kreativitet och kommersiell tillväxt möts, från London till San Francisco, New York och nu Stockholm.
+				</p>
+				<p>
+					Medgrundare av Encoded Brands, där jag använder den erfarenheten för att hjälpa varumärken att navigera den agentiska eran. Jag är entusiastisk inför vad teknologin nu gör möjligt, och hur man omvandlar det till verklig kommersiell fördel.
+				</p>
+				<p>
+					Tidigare ledde jag Forsman &amp; Bodenfors som Group CEO i Sverige, Storbritannien och Irland, med fullt P&amp;L-ansvar och en portfölj som inkluderar Barilla, SKF, Volvo Cars och Supercell. År 2025 befordrades jag till European CEO. Arbetet handlade om integration: att föra ihop strategi, kreativitet, produkt och verksamhet så att både det ekonomiska resultatet och det kreativa arbetet blev bättre.
+				</p>
+				<p>
+					Dessförinnan var jag Global COO på B-Reel, och hjälpte till att skala verksamheten över sex marknader i USA och Europa, med uppdrag för Google, Nike, LVMH, Activision Blizzard och H&amp;M, och erkännande från Fast Company, Adweek och Ad Age.
+				</p>
+				<p>
+					Jag började på AKQA när det digitala fortfarande var nytt, elva år nära den globala Nike-relationen och stora lanseringar med Microsoft och Xbox, genom byråns uppstigning till Ad Age Agency of the Decade.
+				</p>
+				<p>
+					Den erfarenheten har format hur jag ser på förändring: rör dig tidigt, var nyfiken, backa idéer innan de är uppenbara. Jag bryr mig djupt om de människor jag arbetar med. Vi får en chans på det här, så vi lika gärna kan bygga något bra och njuta av det.
+				</p>
+				<p class="closing">Utanför jobbet är jag make och pappa till två döttrar, plus en hund och en katt. Jag är lyckligast utomhus, oavsett om det är en skog, ett berg eller havet. Jag studerade vid University of Newcastle upon Tyne och är fortfarande aktiv som alumnus vid handelshögskolan.</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: 960px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 3em 1em;
+	}
+	.hero-image {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	.hero-image img {
+		width: 100%;
+		height: auto;
+		border-radius: 12px;
+		filter: grayscale(100%);
+	}
+	.prose {
+		max-width: 680px;
+	}
+	.closing {
+		margin-top: 2.5em;
+		font-style: italic;
+		color: rgb(var(--gray));
+	}
+</style>

@@ -1,0 +1,60 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Contact — James Jenkins" description="Get in touch with James Jenkins." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Get in touch</h1>
+			<p>If you are facing a moment that matters, a new market, a repositioning, or a business that needs to add up to one direction, let's talk.</p>
+			<div class="actions">
+				<a href="mailto:James.george.jenkins@gmail.com" class="cta">Send an email</a>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		margin-bottom: 0.4em;
+	}
+	p {
+		max-width: 560px;
+	}
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+		margin-top: 1.5em;
+		flex-wrap: wrap;
+	}
+	.cta {
+		display: inline-block;
+		padding: 0.6em 1.4em;
+		background: var(--accent);
+		color: rgb(var(--bg));
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+	.cta:hover {
+		background: var(--accent-dark);
+		color: rgb(var(--bg));
+	}
+	.email-link {
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+	.email-link:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>

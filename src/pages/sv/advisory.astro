@@ -1,0 +1,87 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title="Rådgivning — James Jenkins" description="James Jenkins rådger ett litet antal varumärken om kommersiellt ledarskap, tillväxt och styrelsearbete." />
+	</head>
+	<body>
+		<Header lang="sv" />
+		<main>
+			<h1>Rådgivning</h1>
+			<p class="intro-line">De flesta varumärken jag arbetar med befinner sig vid ett avgörande ögonblick: en ny marknad, en ny riktning, ett steg upp i ambition. Det är inom dessa områden min erfarenhet brukar vara mest användbar.</p>
+
+			<section class="skill">
+				<h2>Teknologi och den agentiska eran</h2>
+				<p>Jag har tillbringat min karriär där varumärken möter ny teknologi, från digitaliseringens tidiga dagar till AI:s framväxt. Jag bygger själv inom det agentiska området, inte som åskådare från sidan. Jag hjälper varumärken och ledningsgrupper att gå från nyfikenhet kring AI till att använda det i praktiken, och jag hjälper styrelser att förstå vad det innebär för hur de styr och växer. Poängen är inte teknologin i sig. Det är vad den låter ett varumärke göra bättre.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Kommersiellt ledarskap över marknader</h2>
+				<p>Jag har drivit verksamheter i Nordamerika och Europa, i fyra städer, med fullt P&amp;L-ansvar. Jag bygger organisationer som finns till för de människor de tjänar, där utmärkt strategiskt och kreativt arbete och en verksamhet byggd för att hålla är samma mål, inte konkurrerande sådana. Jag vet hur samma varumärke måste fungera på mycket olika marknader utan att förlora det som gör det till vad det är. Om du expanderar till nya marknader, eller försöker få ett globalt varumärke att hålla över dem, är det mark jag har tillbringat tjugo år på.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Att bygga varumärken och driva tillväxt</h2>
+				<p>Jag har tillbringat min karriär med att bygga varumärken inom både B2B och B2C. Det inkluderar åtta år i partnerskap med Nike, och det slags beslutsfattande som driver tillväxt: delvis instinkt, från år i rummet med de bästa varumärkena och de som driver dem, och delvis metod, från att ta team och organisationer från idé till genomförande. Senast förde teamet på Forsman &amp; Bodenfors byrån tillbaka till vinst och toppen av sin bransch. Jag hjälper varumärken att hitta den position som får dem att växa, och sedan genomföra det.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Ledarskap över kulturer</h2>
+				<p>Jag har arbetat i Sverige, Storbritannien, Irland och USA, och lett team från många fler länder. Det jag har lärt mig är hur mycket nyanser spelar roll: hur man läser var någon kommer ifrån och knyter an till människor vars bakgrund och perspektiv inte är mina egna. Jag försöker leda på ett mänskligt sätt, närvarande för de stora och de små stunderna, för det är vad som förtjänar ett teams förtroende och tar dem med dig.</p>
+			</section>
+
+			<section class="skill">
+				<h2>Styrelsearbete</h2>
+				<p>Jag utbildade mig till styrelseledamot genom Styrelseakademien, och genomförde programmet Effective Company Directorship i styrelseledning och bolagsstyrning. Vid sidan av att driva verksamheter med fullt P&amp;L-ansvar har jag tjänstgjort som ordförande. Jag hjälper styrelser och ledningsgrupper att sätta riktning, styra väl och hålla ambition och leverans i samma bild. Om du vill ha ett erfaret par händer i styrelserummet är det där jag kan hjälpa till.</p>
+			</section>
+
+			<p class="closing">Jag finns tillgänglig för konsultuppdrag genom Encoded Brands, eller individuellt, inom ett definierat uppdrag eller ett specifikt behov av affärsledarskap.</p>
+
+			<a href="/sv/contact" class="cta">Kontakta mig</a>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		margin-bottom: 0.3em;
+	}
+	.intro-line {
+		font-size: 1.1em;
+		margin-bottom: 2.5em;
+		color: rgb(var(--gray-dark));
+	}
+	.skill {
+		margin-bottom: 2.5em;
+	}
+	.skill h2 {
+		font-size: 1.2em;
+		margin-bottom: 0.4em;
+	}
+	.closing {
+		margin-top: 2.5em;
+		font-style: italic;
+		color: rgb(var(--gray));
+	}
+	.cta {
+		display: inline-block;
+		margin-top: 1.5em;
+		padding: 0.6em 1.4em;
+		background: var(--accent);
+		color: rgb(var(--bg));
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+	.cta:hover {
+		background: var(--accent-dark);
+		color: rgb(var(--bg));
+	}
+</style>

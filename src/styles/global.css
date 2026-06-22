@@ -17,7 +17,7 @@
 		0 16px 32px rgba(0, 0, 0, 50%);
 }
 body {
-	font-family: var(--font-atkinson);
+	font-family: Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -30,7 +30,7 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: 720px;
+	width: 960px;
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;

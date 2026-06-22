@@ -1,0 +1,53 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title="Kontakt — James Jenkins" description="Kontakta James Jenkins." />
+	</head>
+	<body>
+		<Header lang="sv" />
+		<main>
+			<h1>Kontakta mig</h1>
+			<p>Om du står inför ett avgörande ögonblick, en ny marknad, en ompositionering eller en verksamhet som behöver peka i en riktning, låt oss prata.</p>
+			<div class="actions">
+				<a href="mailto:James.george.jenkins@gmail.com" class="cta">Skicka ett mejl</a>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		margin-bottom: 0.4em;
+	}
+	p {
+		max-width: 560px;
+	}
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: 1.5em;
+		margin-top: 1.5em;
+		flex-wrap: wrap;
+	}
+	.cta {
+		display: inline-block;
+		padding: 0.6em 1.4em;
+		background: var(--accent);
+		color: rgb(var(--bg));
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+	.cta:hover {
+		background: var(--accent-dark);
+		color: rgb(var(--bg));
+	}
+</style>
