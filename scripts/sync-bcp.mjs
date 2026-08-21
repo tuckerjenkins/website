@@ -9,7 +9,7 @@ const REGISTRY_ROOT = 'https://registry.brandcontextprotocol.dev/james-jenkins-a
 const OUT_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'public', '.well-known');
 
 async function fetchText(url) {
-	const res = await fetch(url, { headers: { 'user-agent': 'jamesjenkins.work-bcp-sync' } });
+	const res = await fetch(url, { headers: { 'user-agent': 'www.jamesjenkins.work-bcp-sync' } });
 	if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
 	return res.text();
 }

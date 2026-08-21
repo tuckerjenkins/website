@@ -63,9 +63,9 @@ const { title, description, image = FallbackImage } = Astro.props;
 	'@graph': [
 		{
 			'@type': 'Person',
-			'@id': 'https://jamesjenkins.work/#person',
+			'@id': 'https://www.jamesjenkins.work/#person',
 			name: 'James Jenkins',
-			url: 'https://jamesjenkins.work',
+			url: 'https://www.jamesjenkins.work',
 			jobTitle: 'Co-founder, Encoded Brands',
 			description: 'Brand and business leader with 20+ years running organisations where technology, creativity, and commercial growth meet.',
 			worksFor: { '@id': 'https://encodedbrands.ai/#organization' },
@@ -85,7 +85,7 @@ const { title, description, image = FallbackImage } = Astro.props;
 			'@id': 'https://encodedbrands.ai/#organization',
 			name: 'Encoded Brands',
 			url: 'https://encodedbrands.ai',
-			founder: { '@id': 'https://jamesjenkins.work/#person' },
+			founder: { '@id': 'https://www.jamesjenkins.work/#person' },
 		},
 	],
 })} />
