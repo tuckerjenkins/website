@@ -9,7 +9,7 @@ import portrait from '../assets/james-about.jpg';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="James Jenkins" description="Co-founder of Encoded Brands, helping brands navigate the agentic era." />
+		<BaseHead title="James Jenkins — Brand & Business Leader | Co-founder, Encoded Brands" description="Co-founder of Encoded Brands, helping brands navigate the agentic era." image={portrait} />
 	</head>
 	<body>
 		<Header />
@@ -20,24 +20,11 @@ import portrait from '../assets/james-about.jpg';
 			<div class="prose">
 				<h1>Hello</h1>
 				<p>
-					I'm James Jenkins. I've spent 20+ years building and leading businesses where technology, creativity, and commercial growth meet, from London to San Francisco, New York, and now Stockholm.
+					I'm James Jenkins, a brand and business leader with 20+ years running organisations where technology, creativity, and commercial growth meet. I'm now building Encoded Brands, helping brands navigate the agentic era.
 				</p>
-				<p>
-					Co-founder of Encoded Brands, using that experience to help brands navigate the agentic era. I am excited by what technology now makes possible, and by how you turn it into real commercial advantage.
+				<p class="routes">
+					<a href="/about">The full story</a> · <a href="/advisory">Advisory</a> · <a href="https://encodedbrands.ai" target="_blank">Encoded Brands</a>
 				</p>
-				<p>
-					Previously I led Forsman &amp; Bodenfors as Group CEO across Sweden, the UK, and Ireland, with full P&amp;L responsibility and a portfolio including Barilla, SKF, Volvo Cars, and Supercell. In 2025 I was promoted to European CEO. The work was integration: bringing strategy, creative, product, and operations together so that financial performance and creative work both got better.
-				</p>
-				<p>
-					Before that I was Global COO of B-Reel, helping scale the business across six markets in the US and Europe, with work for Google, Nike, LVMH, Activision Blizzard, and H&amp;M, and recognition from Fast Company, Adweek, and Ad Age.
-				</p>
-				<p>
-					I started at AKQA when digital was still emerging, eleven years close to the global Nike relationship and major launches with Microsoft and Xbox, through the agency's rise to Ad Age Agency of the Decade.
-				</p>
-				<p>
-					That experience shaped how I approach change: move early, stay curious, back ideas before they are obvious. I care deeply about the people I work with. We get one go at this, so we might as well build something good and enjoy it.
-				</p>
-				<p class="closing">Away from work, I'm a husband and dad to two daughters, plus a dog and a cat. I'm happiest outdoors, whether that's a forest, a mountain, or the sea. I studied at the University of Newcastle upon Tyne, and I stay involved as an active alumnus of the business school.</p>
 			</div>
 		</main>
 		<Footer />
@@ -64,9 +51,17 @@ import portrait from '../assets/james-about.jpg';
 	.prose {
 		max-width: 680px;
 	}
-	.closing {
-		margin-top: 2.5em;
-		font-style: italic;
-		color: rgb(var(--gray));
+	.prose h1 {
+		margin-bottom: 0.4em;
+	}
+	.routes {
+		margin-top: 1.5em;
+		font-size: 0.95em;
+	}
+	.routes a {
+		color: rgb(var(--gray-dark));
+	}
+	.routes a:hover {
+		color: var(--accent);
 	}
 </style>

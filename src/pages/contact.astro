@@ -2,12 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import portrait from '../assets/james-about.jpg';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Contact — James Jenkins" description="Get in touch with James Jenkins." />
+		<BaseHead title="Contact — James Jenkins" description="Get in touch with James Jenkins." image={portrait} />
 	</head>
 	<body>
 		<Header />
@@ -15,7 +16,7 @@ import Header from '../components/Header.astro';
 			<h1>Get in touch</h1>
 			<p>If you are facing a moment that matters, a new market, a repositioning, or a business that needs to add up to one direction, let's talk.</p>
 			<div class="actions">
-				<a href="mailto:James.george.jenkins@gmail.com" class="cta">Send an email</a>
+				<a href="mailto:james@encodedbrands.ai" class="cta">Send an email</a>
 			</div>
 		</main>
 		<Footer />

@@ -3,7 +3,8 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} James Jenkins. All rights reserved.
+	<p>&copy; {today.getFullYear()} James Jenkins. All rights reserved.</p>
+	<p class="bcp-note">This site carries its own <a href="/.well-known/brand.md" target="_blank" rel="alternate">Brand Context Protocol</a> file, designed for AI agents to read directly — a live demo of Encoded Brands. <a href="https://encodedbrands.ai" target="_blank">Get yours here.</a></p>
 </footer>
 <style>
 	footer {
@@ -13,5 +14,15 @@ const today = new Date();
 		color: rgb(var(--gray));
 		text-align: center;
 		font-size: 0.7em;
+	}
+	footer p {
+		margin: 0.4em 0 0 0;
+	}
+	.bcp-note a {
+		color: rgb(var(--gray));
+		text-decoration: underline;
+	}
+	.bcp-note a:hover {
+		color: rgb(var(--gray-dark));
 	}
 </style>

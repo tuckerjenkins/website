@@ -2,12 +2,13 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
+import portrait from '../../assets/james-about.jpg';
 ---
 
 <!doctype html>
 <html lang="sv">
 	<head>
-		<BaseHead title="Kontakt — James Jenkins" description="Kontakta James Jenkins." />
+		<BaseHead title="Kontakt — James Jenkins" description="Kontakta James Jenkins." image={portrait} />
 	</head>
 	<body>
 		<Header lang="sv" />
@@ -15,7 +16,7 @@ import Header from '../../components/Header.astro';
 			<h1>Kontakta mig</h1>
 			<p>Om du står inför ett avgörande ögonblick, en ny marknad, en ompositionering eller en verksamhet som behöver peka i en riktning, låt oss prata.</p>
 			<div class="actions">
-				<a href="mailto:James.george.jenkins@gmail.com" class="cta">Skicka ett mejl</a>
+				<a href="mailto:james@encodedbrands.ai" class="cta">Skicka ett mejl</a>
 			</div>
 		</main>
 		<Footer />

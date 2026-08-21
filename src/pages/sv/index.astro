@@ -9,7 +9,7 @@ import portrait from '../../assets/james-about.jpg';
 <!doctype html>
 <html lang="sv">
 	<head>
-		<BaseHead title="James Jenkins" description="Medgrundare av Encoded Brands, hjälper varumärken att navigera den agentiska eran." />
+		<BaseHead title="James Jenkins — Varumärkes- och affärsledare | Medgrundare, Encoded Brands" description="Medgrundare av Encoded Brands, hjälper varumärken att navigera den agentiska eran." image={portrait} />
 	</head>
 	<body>
 		<Header lang="sv" />
@@ -20,24 +20,11 @@ import portrait from '../../assets/james-about.jpg';
 			<div class="prose">
 				<h1>Hej</h1>
 				<p>
-					Jag heter James Jenkins. Jag har tillbringat 20+ år med att bygga och leda verksamheter där teknologi, kreativitet och kommersiell tillväxt möts, från London till San Francisco, New York och nu Stockholm.
+					Jag heter James Jenkins, en varumärkes- och affärsledare med 20+ års erfarenhet av att driva verksamheter där teknologi, kreativitet och kommersiell tillväxt möts. Jag bygger nu Encoded Brands, och hjälper varumärken att navigera den agentiska eran.
 				</p>
-				<p>
-					Medgrundare av Encoded Brands, där jag använder den erfarenheten för att hjälpa varumärken att navigera den agentiska eran. Jag är entusiastisk inför vad teknologin nu gör möjligt, och hur man omvandlar det till verklig kommersiell fördel.
+				<p class="routes">
+					<a href="/sv/about">Hela historien</a> · <a href="/sv/advisory">Rådgivning</a> · <a href="https://encodedbrands.ai" target="_blank">Encoded Brands</a>
 				</p>
-				<p>
-					Tidigare ledde jag Forsman &amp; Bodenfors som Group CEO i Sverige, Storbritannien och Irland, med fullt P&amp;L-ansvar och en portfölj som inkluderar Barilla, SKF, Volvo Cars och Supercell. År 2025 befordrades jag till European CEO. Arbetet handlade om integration: att föra ihop strategi, kreativitet, produkt och verksamhet så att både det ekonomiska resultatet och det kreativa arbetet blev bättre.
-				</p>
-				<p>
-					Dessförinnan var jag Global COO på B-Reel, och hjälpte till att skala verksamheten över sex marknader i USA och Europa, med uppdrag för Google, Nike, LVMH, Activision Blizzard och H&amp;M, och erkännande från Fast Company, Adweek och Ad Age.
-				</p>
-				<p>
-					Jag började på AKQA när det digitala fortfarande var nytt, elva år nära den globala Nike-relationen och stora lanseringar med Microsoft och Xbox, genom byråns uppstigning till Ad Age Agency of the Decade.
-				</p>
-				<p>
-					Den erfarenheten har format hur jag ser på förändring: rör dig tidigt, var nyfiken, backa idéer innan de är uppenbara. Jag bryr mig djupt om de människor jag arbetar med. Vi får en chans på det här, så vi lika gärna kan bygga något bra och njuta av det.
-				</p>
-				<p class="closing">Utanför jobbet är jag make och pappa till två döttrar, plus en hund och en katt. Jag är lyckligast utomhus, oavsett om det är en skog, ett berg eller havet. Jag studerade vid University of Newcastle upon Tyne och är fortfarande aktiv som alumnus vid handelshögskolan.</p>
 			</div>
 		</main>
 		<Footer />
@@ -64,9 +51,17 @@ import portrait from '../../assets/james-about.jpg';
 	.prose {
 		max-width: 680px;
 	}
-	.closing {
-		margin-top: 2.5em;
-		font-style: italic;
-		color: rgb(var(--gray));
+	.prose h1 {
+		margin-bottom: 0.4em;
+	}
+	.routes {
+		margin-top: 1.5em;
+		font-size: 0.95em;
+	}
+	.routes a {
+		color: rgb(var(--gray-dark));
+	}
+	.routes a:hover {
+		color: var(--accent);
 	}
 </style>

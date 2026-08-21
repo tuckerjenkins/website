@@ -7,6 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "sync-bcp": "node scripts/sync-bcp.mjs",
+    "prebuild": "npm run sync-bcp",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

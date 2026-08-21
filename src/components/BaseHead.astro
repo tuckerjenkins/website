@@ -55,3 +55,37 @@ const { title, description, image = FallbackImage } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
+
+<!-- Structured data: this site also publishes a machine-readable Brand Context Protocol file at /.well-known/brand.md -->
+<link rel="alternate" type="text/markdown" title="Brand Context Protocol" href="/.well-known/brand.md" />
+<script type="application/ld+json" set:html={JSON.stringify({
+	'@context': 'https://schema.org',
+	'@graph': [
+		{
+			'@type': 'Person',
+			'@id': 'https://jamesjenkins.work/#person',
+			name: 'James Jenkins',
+			url: 'https://jamesjenkins.work',
+			jobTitle: 'Co-founder, Encoded Brands',
+			description: 'Brand and business leader with 20+ years running organisations where technology, creativity, and commercial growth meet.',
+			worksFor: { '@id': 'https://encodedbrands.ai/#organization' },
+			alumniOf: {
+				'@type': 'CollegeOrUniversity',
+				name: 'Newcastle University',
+			},
+			affiliation: [
+				{ '@type': 'Organization', name: 'Forsman & Bodenfors', url: 'https://www.forsman.com' },
+				{ '@type': 'Organization', name: 'B-Reel', url: 'https://b-reel.com' },
+				{ '@type': 'Organization', name: 'AKQA', url: 'https://www.akqa.com' },
+			],
+			sameAs: ['https://www.linkedin.com/in/jamesgjenkins/'],
+		},
+		{
+			'@type': 'Organization',
+			'@id': 'https://encodedbrands.ai/#organization',
+			name: 'Encoded Brands',
+			url: 'https://encodedbrands.ai',
+			founder: { '@id': 'https://jamesjenkins.work/#person' },
+		},
+	],
+})} />
