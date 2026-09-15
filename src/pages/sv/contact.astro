@@ -18,6 +18,16 @@ import portrait from '../../assets/james-about.jpg';
 			<div class="actions">
 				<a href="mailto:james@encodedbrands.ai" class="cta">Skicka ett mejl</a>
 			</div>
+
+			<div class="references">
+				<p class="references-label">Referenser tillgängliga på begäran</p>
+				<ul class="reference-list">
+					<li><span class="ref-name">Ajaz Ahmed</span> — Grundare, AKQA och Studio.One</li>
+					<li><span class="ref-name">John Bergdahl</span> — CCO, Forsman &amp; Bodenfors</li>
+					<li><span class="ref-name">Melissa Jackson Parsey</span> — Global Chief Strategy Officer, R/GA</li>
+					<li><span class="ref-name">David Sable</span> — Vice Chair, Stagwell</li>
+				</ul>
+			</div>
 		</main>
 		<Footer />
 	</body>
@@ -50,5 +60,32 @@ import portrait from '../../assets/james-about.jpg';
 	.cta:hover {
 		background: var(--accent-dark);
 		color: rgb(var(--bg));
+	}
+	.references {
+		margin-top: 3em;
+		padding-top: 2em;
+		border-top: 1px solid rgb(var(--gray-light));
+		max-width: 560px;
+	}
+	.references-label {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.75em;
+		color: rgb(var(--gray));
+		margin-bottom: 1em;
+	}
+	.reference-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.reference-list li {
+		color: rgb(var(--gray-dark));
+		font-size: 0.9em;
+		margin-bottom: 0.6em;
+	}
+	.ref-name {
+		font-weight: 700;
+		color: rgb(var(--black));
 	}
 </style>
