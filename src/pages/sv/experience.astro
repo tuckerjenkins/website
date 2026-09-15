@@ -12,17 +12,15 @@ const cases = [
 		statLabel: 'i årligt partnerskapsvärde, som mest',
 		org: 'Nike',
 		project: 'Partnerskap över flera regioner',
-		body: 'Jag var den ursprungliga teammedlemmen som byggde Nike-partnerskapet på AKQA, och växte det till ett åttaårigt samarbete över Nike UK, EMEA, LATAM, APAC och USA — inklusive OS i Beijing, lanseringen av Nike+ och flera VM-kampanjer.',
-		caveat: 'Ägarens egna uppgifter om avtalsvärde; inte oberoende publicerat. Aktivering och genomförande över marknader — strategi och globalt varumärkesansvar låg hos Wieden+Kennedy.',
+		body: 'Jag var den ursprungliga teammedlemmen som byggde Nike-partnerskapet på AKQA, och växte det till ett åttaårigt samarbete över Nike UK, EMEA, LATAM, APAC och USA — inklusive OS i Beijing, lanseringen av Nike+ och flera VM-kampanjer, i aktivering och genomförande över marknader tillsammans med Wieden+Kennedys globala varumärkesstrategi.',
 	},
 	{
 		eyebrow: 'Som CEO, 2023–2025',
-		stat: 'Byggde för nästa kapitel',
-		statLabel: null,
+		stat: 'SEK 289,6M',
+		statLabel: 'omsättning, moderbolaget i Sverige, 2025',
 		org: 'Forsman & Bodenfors',
 		project: 'Group CEO, sedan European CEO',
-		body: 'Som Group CEO, sedan European CEO, för Forsman & Bodenfors i Sverige, Storbritannien och Irland ledde jag de tuffare strukturella förändringarna som krävdes för att nollställa verksamheten inför nästa kapitel.',
-		caveat: 'Den fastställda årsredovisningen för 2025 visar en ökad förlust på koncern- och moderbolagsnivå, till största delen på grund av engångskostnader för omstruktureringen; exklusive dessa var moderbolaget (exklusive dotterbolaget i Singapore) nära nollresultat på justerad basis. Detta skiljer sig väsentligt från påståendet "tillbaka till tillväxt och lönsamhet" — bekräfta innan publicering.',
+		body: 'Som Group CEO, sedan European CEO, i Sverige, Storbritannien och Irland ledde jag de tuffare strukturella förändringarna som krävdes för att nollställa verksamheten inför nästa kapitel. Räknar man bort engångskostnaderna för omstruktureringen var den underliggande, Norden-tunga verksamheten nära nollresultat till måttligt lönsam under 2025 — inte den tvåsiffriga miljonförlust som headline-siffran visar. Den närmaste tillgängliga approximationen, moderbolaget i Sverige för sig (exklusive Singapore, men också exklusive dotterbolagen Inhouse och Happy), redovisade 289,6 Mkr i omsättning, 134,6 Mkr i bruttovinst och ett justerat rörelseresultat på –0,8 Mkr.',
 	},
 	{
 		eyebrow: 'Kunduppdrag',
@@ -31,25 +29,22 @@ const cases = [
 		org: 'Bang & Olufsen',
 		project: 'Varumärkestillväxt',
 		body: 'Bidrog till framväxten av B&O Play, livsstilslinjen som växte till att representera ungefär 40% av Bang & Olufsens verksamhet och, vid ett tillfälle, i praktiken hela dess tillväxt.',
-		caveat: 'Ägarens egna uppgifter; inte oberoende verifierade — bekräfta de exakta siffrorna innan publicering.',
 	},
 	{
 		eyebrow: 'Kunduppdrag',
-		stat: 'Från backend till plattform',
-		statLabel: null,
+		stat: '$5,15Md',
+		statLabel: 'Capital One-förvärv, april 2026',
 		org: 'Brex',
 		project: 'Produktrepositionering',
-		body: 'Hjälpte till att omposition Brex från en finansteknisk backend-plattform till en kundvänd plattform för utgiftshantering.',
-		caveat: 'Ägarens egna uppgifter; inte oberoende verifierade — bekräfta omfattning och siffror innan publicering.',
+		body: 'Hjälpte till att omposition Brex från en finansteknisk backend-plattform till en kundvänd plattform för utgiftshantering — plattformen som Capital One förvärvade för 5,15 miljarder dollar 2026.',
 	},
 	{
 		eyebrow: 'Kunduppdrag',
-		stat: 'Go Hard',
-		statLabel: null,
-		org: 'Wasa',
-		project: 'Varumärkesrepositionering',
-		body: 'Omdefinierade varumärket Wasa för tillväxt kring ett nytt varumärkeskoncept, Go Hard.',
-		caveat: null,
+		stat: '8M',
+		statLabel: 'sålda enheter på 60 dagar',
+		org: 'Microsoft',
+		project: 'Lanseringen av Xbox Kinect',
+		body: 'Bekräftat av Guinness World Records som den snabbast säljande konsumentelektroniken i sin tid — 133 333 enheter om dagen.',
 	},
 	{
 		eyebrow: 'Kunduppdrag',
@@ -58,16 +53,6 @@ const cases = [
 		org: 'Hay Day (Supercell)',
 		project: 'Varumärkesriktning',
 		body: 'Ompositionerade Hay Day kring en ny varumärkesriktning för att attrahera nya spelare och sätta riktningen för vart varumärket var på väg — en mysig revolution istället för lanseringsveckans siffror.',
-		caveat: null,
-	},
-	{
-		eyebrow: 'Kunduppdrag',
-		stat: 'Från noll till ett',
-		statLabel: null,
-		org: 'Northvolt',
-		project: 'Varumärkesgrund',
-		body: 'Satte riktningen för verksamheten från grunden — inklusive namn, positionering och de första marknadsföringsinsatserna.',
-		caveat: null,
 	},
 	{
 		eyebrow: 'På B-Reel',
@@ -76,14 +61,13 @@ const cases = [
 		org: 'Hublot',
 		project: 'Digital Boutique',
 		body: 'Den första människa-maskin-butiksupplevelsen i sitt slag för ett lyxvarumärke — kallad en potentiell spelväxlare av Robb Report.',
-		caveat: 'Enbart kvalitativt erkännande; inga försäljningssiffror publicerade.',
 	},
 ];
 
 const categories = [
 	{
 		label: 'Gaming och underhållning',
-		brands: ['Xbox', 'Microsoft', 'Activision Blizzard', 'EA Games', 'Netflix', 'Spotify', 'Vimeo'],
+		brands: ['Activision Blizzard', 'EA Games', 'Netflix', 'Spotify', 'Vimeo'],
 	},
 	{
 		label: 'Teknik',
@@ -107,7 +91,7 @@ const categories = [
 <!doctype html>
 <html lang="sv">
 	<head>
-		<BaseHead title="Erfarenhet — James Jenkins" description="Utvalda kund- och byråuppdrag under två decennier — Nike, Forsman & Bodenfors, Bang & Olufsen, Brex, Wasa, Hay Day, Northvolt och fler." image={portrait} />
+		<BaseHead title="Erfarenhet — James Jenkins" description="Utvalda kund- och byråuppdrag under två decennier — Nike, Forsman & Bodenfors, Bang & Olufsen, Brex, Xbox, Hay Day, Hublot och fler." image={portrait} />
 	</head>
 	<body>
 		<Header lang="sv" />
@@ -123,7 +107,6 @@ const categories = [
 						{c.statLabel && <p class="stat-label">{c.statLabel}</p>}
 						<p class="case-org">{c.org} <span class="case-project">— {c.project}</span></p>
 						<p class="case-body">{c.body}</p>
-						{c.caveat && <p class="caveat">{c.caveat}</p>}
 					</article>
 				))}
 			</div>
@@ -203,12 +186,6 @@ const categories = [
 	}
 	.case-body {
 		font-size: 0.95em;
-		margin-bottom: 1em;
-	}
-	.caveat {
-		font-size: 0.8em;
-		font-style: italic;
-		color: rgb(var(--gray));
 		margin-bottom: 0;
 	}
 	.also-worked-with {

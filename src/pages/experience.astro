@@ -12,17 +12,15 @@ const cases = [
 		statLabel: 'annual partnership value, at its peak',
 		org: 'Nike',
 		project: 'Multi-region partnership',
-		body: 'I was the original team member who built the Nike partnership at AKQA, growing it into an eight-year relationship across Nike UK, EMEA, LATAM, APAC and the US — including the Beijing Olympics, the Nike+ launch, and multiple World Cup campaigns.',
-		caveat: 'Owner-stated deal value; not independently published. Activation and execution across markets — strategy and global brand lead sat with Wieden+Kennedy.',
+		body: "I was the original team member who built the Nike partnership at AKQA, growing it into an eight-year relationship across Nike UK, EMEA, LATAM, APAC and the US — including the Beijing Olympics, the Nike+ launch, and multiple World Cup campaigns, activating and executing across markets alongside Wieden+Kennedy's global brand strategy.",
 	},
 	{
 		eyebrow: 'As CEO, 2023–2025',
-		stat: 'Built for the next chapter',
-		statLabel: null,
+		stat: 'SEK 289.6m',
+		statLabel: 'Sweden parent-company revenue, FY2025',
 		org: 'Forsman & Bodenfors',
 		project: 'Group CEO, then European CEO',
-		body: 'As Group CEO, then European CEO, of Forsman & Bodenfors across Sweden, the UK and Ireland, I led the harder structural changes needed to reset the business for its next chapter.',
-		caveat: "FY2025 filed accounts show a widened loss at group and parent level, largely reflecting one-off restructuring costs; excluding those, the parent company (excluding the Singapore subsidiary) was close to breakeven on an adjusted basis. This is a materially different claim from 'returned to growth and profitability' — confirm before publishing.",
+		body: 'As Group CEO, then European CEO, across Sweden, the UK and Ireland, I led the harder structural changes needed to reset the business for its next chapter. Back out the one-off restructuring costs and the underlying, Nordic-weighted business was close to breakeven-to-modestly-profitable in FY2025 — not the double-digit-million loss the headline number shows. The closest available proxy, the Sweden parent company alone (excluding Singapore, but also excluding the Inhouse and Happy subsidiaries), posted SEK 289.6m revenue, SEK 134.6m gross profit, and a –0.8m adjusted operating result.',
 	},
 	{
 		eyebrow: 'Client work',
@@ -31,25 +29,22 @@ const cases = [
 		org: 'Bang & Olufsen',
 		project: 'Brand growth',
 		body: "Helped drive the rise of B&O Play, the lifestyle audio line that grew to represent roughly 40% of Bang & Olufsen's business and, at one stage, effectively all of its growth.",
-		caveat: 'Owner-stated; not independently verified — confirm the exact figures before publishing.',
 	},
 	{
 		eyebrow: 'Client work',
-		stat: 'Backend to platform',
-		statLabel: null,
+		stat: '$5.15B',
+		statLabel: 'Capital One acquisition, April 2026',
 		org: 'Brex',
 		project: 'Product repositioning',
-		body: 'Helped reposition Brex from a backend financial technology platform to a customer-facing expense management platform.',
-		caveat: 'Owner-stated; not independently verified — confirm the exact scope and figures before publishing.',
+		body: 'Helped reposition Brex from a backend financial technology platform to a customer-facing expense management platform — the platform Capital One acquired for $5.15B in 2026.',
 	},
 	{
 		eyebrow: 'Client work',
-		stat: 'Go Hard',
-		statLabel: null,
-		org: 'Wasa',
-		project: 'Brand repositioning',
-		body: 'Repositioned the Wasa crispbread brand for growth around a new brand concept, Go Hard.',
-		caveat: null,
+		stat: '8M',
+		statLabel: 'units sold in 60 days',
+		org: 'Microsoft',
+		project: 'Xbox Kinect launch',
+		body: 'Confirmed by Guinness World Records as the fastest-selling consumer electronics device of its time — 133,333 units a day.',
 	},
 	{
 		eyebrow: 'Client work',
@@ -58,16 +53,6 @@ const cases = [
 		org: 'Hay Day (Supercell)',
 		project: 'Brand direction',
 		body: 'Repositioned Hay Day around a new brand direction to attract new players and set where the brand was headed next — a cosy revolution in place of launch-week metrics.',
-		caveat: null,
-	},
-	{
-		eyebrow: 'Client work',
-		stat: 'Zero to one',
-		statLabel: null,
-		org: 'Northvolt',
-		project: 'Brand foundation',
-		body: 'Set the direction for the business from the ground up — including the name, positioning, and initial marketing efforts.',
-		caveat: null,
 	},
 	{
 		eyebrow: 'At B-Reel',
@@ -76,14 +61,13 @@ const cases = [
 		org: 'Hublot',
 		project: 'Digital Boutique',
 		body: 'The first human-machine retail experience of its kind for a luxury brand — called a potential game changer by Robb Report.',
-		caveat: 'Qualitative recognition only; no sales figures published.',
 	},
 ];
 
 const categories = [
 	{
 		label: 'Gaming & entertainment',
-		brands: ['Xbox', 'Microsoft', 'Activision Blizzard', 'EA Games', 'Netflix', 'Spotify', 'Vimeo'],
+		brands: ['Activision Blizzard', 'EA Games', 'Netflix', 'Spotify', 'Vimeo'],
 	},
 	{
 		label: 'Technology',
@@ -107,7 +91,7 @@ const categories = [
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Experience — James Jenkins" description="Selected client and agency work across two decades — Nike, Forsman & Bodenfors, Bang & Olufsen, Brex, Wasa, Hay Day, Northvolt, and more." image={portrait} />
+		<BaseHead title="Experience — James Jenkins" description="Selected client and agency work across two decades — Nike, Forsman & Bodenfors, Bang & Olufsen, Brex, Xbox, Hay Day, Hublot, and more." image={portrait} />
 	</head>
 	<body>
 		<Header />
@@ -123,7 +107,6 @@ const categories = [
 						{c.statLabel && <p class="stat-label">{c.statLabel}</p>}
 						<p class="case-org">{c.org} <span class="case-project">— {c.project}</span></p>
 						<p class="case-body">{c.body}</p>
-						{c.caveat && <p class="caveat">{c.caveat}</p>}
 					</article>
 				))}
 			</div>
@@ -203,12 +186,6 @@ const categories = [
 	}
 	.case-body {
 		font-size: 0.95em;
-		margin-bottom: 1em;
-	}
-	.caveat {
-		font-size: 0.8em;
-		font-style: italic;
-		color: rgb(var(--gray));
 		margin-bottom: 0;
 	}
 	.also-worked-with {
