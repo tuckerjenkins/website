@@ -23,7 +23,7 @@ const normalizedPath = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isSv = normalizedPath === '/sv' || normalizedPath.startsWith('/sv/');
 const enPath = isSv ? normalizedPath.replace(/^\/sv/, '') || '/' : normalizedPath;
 const svPath = isSv ? normalizedPath : enPath === '/' ? '/sv' : `/sv${enPath}`;
-const bilingualPaths = new Set(['/', '/about', '/advisory', '/contact']);
+const bilingualPaths = new Set(['/', '/about', '/advisory', '/case-studies', '/contact']);
 const withTrailingSlash = (path: string) => (path === '/' ? '/' : `${path}/`);
 const hasTranslation = bilingualPaths.has(enPath);
 const enHreflangURL = hasTranslation ? new URL(withTrailingSlash(enPath), Astro.site) : null;
