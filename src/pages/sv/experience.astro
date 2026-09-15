@@ -1,0 +1,241 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import portrait from '../../assets/james-about.jpg';
+
+const cases = [
+	{
+		featured: true,
+		eyebrow: 'På AKQA',
+		stat: '$60M',
+		statLabel: 'i årligt partnerskapsvärde, som mest',
+		org: 'Nike',
+		project: 'Partnerskap över flera regioner',
+		body: 'Jag var den ursprungliga teammedlemmen som byggde Nike-partnerskapet på AKQA, och växte det till ett åttaårigt samarbete över Nike UK, EMEA, LATAM, APAC och USA — inklusive OS i Beijing, lanseringen av Nike+ och flera VM-kampanjer.',
+		caveat: 'Ägarens egna uppgifter om avtalsvärde; inte oberoende publicerat. Aktivering och genomförande över marknader — strategi och globalt varumärkesansvar låg hos Wieden+Kennedy.',
+	},
+	{
+		eyebrow: 'Som CEO, 2023–2025',
+		stat: 'Byggde för nästa kapitel',
+		statLabel: null,
+		org: 'Forsman & Bodenfors',
+		project: 'Group CEO, sedan European CEO',
+		body: 'Som Group CEO, sedan European CEO, för Forsman & Bodenfors i Sverige, Storbritannien och Irland ledde jag de tuffare strukturella förändringarna som krävdes för att nollställa verksamheten inför nästa kapitel.',
+		caveat: 'Den fastställda årsredovisningen för 2025 visar en ökad förlust på koncern- och moderbolagsnivå, till största delen på grund av engångskostnader för omstruktureringen; exklusive dessa var moderbolaget (exklusive dotterbolaget i Singapore) nära nollresultat på justerad basis. Detta skiljer sig väsentligt från påståendet "tillbaka till tillväxt och lönsamhet" — bekräfta innan publicering.',
+	},
+	{
+		eyebrow: 'Kunduppdrag',
+		stat: 'B&O Play',
+		statLabel: 'växte till ungefär 40% av verksamheten',
+		org: 'Bang & Olufsen',
+		project: 'Varumärkestillväxt',
+		body: 'Bidrog till framväxten av B&O Play, livsstilslinjen som växte till att representera ungefär 40% av Bang & Olufsens verksamhet och, vid ett tillfälle, i praktiken hela dess tillväxt.',
+		caveat: 'Ägarens egna uppgifter; inte oberoende verifierade — bekräfta de exakta siffrorna innan publicering.',
+	},
+	{
+		eyebrow: 'Kunduppdrag',
+		stat: 'Från backend till plattform',
+		statLabel: null,
+		org: 'Brex',
+		project: 'Produktrepositionering',
+		body: 'Hjälpte till att omposition Brex från en finansteknisk backend-plattform till en kundvänd plattform för utgiftshantering.',
+		caveat: 'Ägarens egna uppgifter; inte oberoende verifierade — bekräfta omfattning och siffror innan publicering.',
+	},
+	{
+		eyebrow: 'Kunduppdrag',
+		stat: 'Go Hard',
+		statLabel: null,
+		org: 'Wasa',
+		project: 'Varumärkesrepositionering',
+		body: 'Omdefinierade varumärket Wasa för tillväxt kring ett nytt varumärkeskoncept, Go Hard.',
+		caveat: null,
+	},
+	{
+		eyebrow: 'Kunduppdrag',
+		stat: 'En mysig revolution',
+		statLabel: null,
+		org: 'Hay Day (Supercell)',
+		project: 'Varumärkesriktning',
+		body: 'Ompositionerade Hay Day kring en ny varumärkesriktning för att attrahera nya spelare och sätta riktningen för vart varumärket var på väg — en mysig revolution istället för lanseringsveckans siffror.',
+		caveat: null,
+	},
+	{
+		eyebrow: 'Kunduppdrag',
+		stat: 'Från noll till ett',
+		statLabel: null,
+		org: 'Northvolt',
+		project: 'Varumärkesgrund',
+		body: 'Satte riktningen för verksamheten från grunden — inklusive namn, positionering och de första marknadsföringsinsatserna.',
+		caveat: null,
+	},
+	{
+		eyebrow: 'På B-Reel',
+		stat: 'En första',
+		statLabel: 'inom lyxhandel',
+		org: 'Hublot',
+		project: 'Digital Boutique',
+		body: 'Den första människa-maskin-butiksupplevelsen i sitt slag för ett lyxvarumärke — kallad en potentiell spelväxlare av Robb Report.',
+		caveat: 'Enbart kvalitativt erkännande; inga försäljningssiffror publicerade.',
+	},
+];
+
+const categories = [
+	{
+		label: 'Gaming och underhållning',
+		brands: ['Xbox', 'Microsoft', 'Activision Blizzard', 'EA Games', 'Netflix', 'Spotify', 'Vimeo'],
+	},
+	{
+		label: 'Teknik',
+		brands: ['Apple', 'Google', 'Autodesk', 'Osmo', 'Afterpay'],
+	},
+	{
+		label: 'Mode, lyx och skönhet',
+		brands: ['LVMH', 'Richemont', 'PUIG', 'Beats by Dre', 'H&M'],
+	},
+	{
+		label: 'Mat, dryck och konsumentvaror',
+		brands: ['Barilla', 'Anheuser-Busch InBev', 'Red Bull', 'Burger King', 'Unilever'],
+	},
+	{
+		label: 'Fordon och industri',
+		brands: ['Volvo Cars', 'Group 1 Automotive', 'SKF'],
+	},
+];
+---
+
+<!doctype html>
+<html lang="sv">
+	<head>
+		<BaseHead title="Erfarenhet — James Jenkins" description="Utvalda kund- och byråuppdrag under två decennier — Nike, Forsman & Bodenfors, Bang & Olufsen, Brex, Wasa, Hay Day, Northvolt och fler." image={portrait} />
+	</head>
+	<body>
+		<Header lang="sv" />
+		<main>
+			<h1>Erfarenhet</h1>
+			<p class="intro-line">Utvalda resultat från kund- och byråarbete under två decennier. Inget av det var mitt ensamt — varje resultat nedan kom från ett kollektiv av människor jag hade turen att arbeta tillsammans med.</p>
+
+			<div class="grid">
+				{cases.map((c) => (
+					<article class={`case-card ${c.featured ? 'featured' : ''}`}>
+						<p class="eyebrow">{c.eyebrow}</p>
+						<p class="stat">{c.stat}</p>
+						{c.statLabel && <p class="stat-label">{c.statLabel}</p>}
+						<p class="case-org">{c.org} <span class="case-project">— {c.project}</span></p>
+						<p class="case-body">{c.body}</p>
+						{c.caveat && <p class="caveat">{c.caveat}</p>}
+					</article>
+				))}
+			</div>
+
+			<section class="also-worked-with">
+				<p class="eyebrow">Har även arbetat med</p>
+				{categories.map((cat) => (
+					<p class="category-row"><span class="category-label">{cat.label}:</span> {cat.brands.join(' · ')}</p>
+				))}
+			</section>
+
+			<a href="/sv/contact" class="cta">Kontakta mig</a>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	h1 {
+		margin-bottom: 0.3em;
+	}
+	.intro-line {
+		font-size: 1.1em;
+		margin-bottom: 2.5em;
+		color: rgb(var(--gray-dark));
+	}
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.75em;
+		color: rgb(var(--gray));
+		margin-bottom: 0.5em;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.5em;
+		margin-bottom: 3em;
+	}
+	.case-card {
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 10px;
+		padding: 1.75em;
+	}
+	.case-card.featured {
+		grid-column: 1 / -1;
+		padding: 2em;
+	}
+	.stat {
+		font-size: 1.8em;
+		font-weight: 700;
+		color: var(--accent);
+		line-height: 1.15;
+		margin: 0 0 0.2em 0;
+		letter-spacing: -0.01em;
+	}
+	.case-card.featured .stat {
+		font-size: 2.4em;
+	}
+	.stat-label {
+		font-size: 0.85em;
+		color: rgb(var(--gray));
+		margin-bottom: 1.2em;
+	}
+	.case-org {
+		font-weight: 700;
+		color: rgb(var(--black));
+		margin-bottom: 0.6em;
+		margin-top: 1em;
+	}
+	.stat-label + .case-org {
+		margin-top: 0;
+	}
+	.case-project {
+		font-weight: 400;
+		color: rgb(var(--gray));
+	}
+	.case-body {
+		font-size: 0.95em;
+		margin-bottom: 1em;
+	}
+	.caveat {
+		font-size: 0.8em;
+		font-style: italic;
+		color: rgb(var(--gray));
+		margin-bottom: 0;
+	}
+	.also-worked-with {
+		margin-bottom: 2.5em;
+	}
+	.category-row {
+		color: rgb(var(--gray-dark));
+		font-size: 0.95em;
+		margin-bottom: 0.6em;
+	}
+	.category-label {
+		color: rgb(var(--black));
+		font-weight: 600;
+	}
+	.cta {
+		display: inline-block;
+		margin-top: 0.5em;
+		padding: 0.6em 1.4em;
+		background: var(--accent);
+		color: rgb(var(--bg));
+		text-decoration: none;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9em;
+	}
+	.cta:hover {
+		background: var(--accent-dark);
+		color: rgb(var(--bg));
+	}
+</style>
